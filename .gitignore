@@ -91,3 +91,4 @@ yarn-error.log*
 .pnp/
 .pnp.js
 .vscode/mcp.json
+run_mcp.py
