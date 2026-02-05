@@ -1,4 +1,4 @@
-# Chimera Agent Skills Registry  
+# Chimera Agent Skills Registry | Updated: 2026-02-05  
 *SRS Trace: §4.3 Creative Engine, §4.6 Orchestration & Swarm Governance*
 
 ## Architecture Principle

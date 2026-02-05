@@ -1,4 +1,4 @@
-# Tooling Strategy: Developer MCP vs. Runtime Skills  
+# Tooling Strategy: Developer MCP vs. Runtime Skills | Updated: 2026-02-05  
 *SRS Trace: §3.2 MCP Integration Layer, §7.2 Phase 2*
 
 ## Developer MCP Servers (For YOU – The Engineer)
