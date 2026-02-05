@@ -1,4 +1,4 @@
-# AI Co-Pilot Governance Rules for Project Chimera
+# AI Co-Pilot Governance Rules for Project Chimera | Updated: 2026-02-05
 
 > **This document instructs GitHub Copilot on how to behave. Read this before generating ANY code.**
 
@@ -53,3 +53,4 @@ Example:
 ```
 
 ---
+
