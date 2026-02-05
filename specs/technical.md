@@ -1,5 +1,5 @@
 # Technical Specifications: Contracts & Schemas
-*SRS Trace: §6.2 Data Models & Schemas | Version: 2026.02.05*
+*SRS Trace: §6.2 Data Models & Schemas | Version: 2026-02-05*
 
 ## 1. API Contract: Agent Task Schema (Planner → Worker)
 *Purpose: Standardized payload for task delegation within FastRender Swarm*  
