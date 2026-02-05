@@ -11,7 +11,7 @@
 - [ ] AC-F001-3: Inject persona into LLM context BEFORE every reasoning step
 - [ ] AC-F001-4: Store SHA-256 hash in `agents.soul_md_hash`
 
-*SRS Trace: §4.1 FR 1.0*
+*SRS Trace: §4 Functional Requirements | Updated: 2026-02-05
 
 ## F-002: Active Resource Monitoring
 **As a** Chimera Agent  
@@ -24,7 +24,7 @@
 - [ ] AC-F002-3: Trigger Planner only if `relevance_score ≥ 0.75`
 - [ ] AC-F002-4: Continue polling during agent "sleep"
 
-*SRS Trace: §4.2 FR 2.0–2.1*
+*SRS Trace: §4 Functional Requirements | Updated: 2026-02-05
 
 ## F-003: Character Consistency Lock
 **As a** Chimera Agent  
@@ -37,7 +37,7 @@
 - [ ] AC-F003-3: Auto-retry on failure (max 3 attempts)
 - [ ] AC-F003-4: Reject if `consistency_score < 0.85`
 
-*SRS Trace: §4.3 FR 3.1*
+*SRS Trace: §4 Functional Requirements | Updated: 2026-02-05
 
 ## F-004: Budget Governance (CFO Sub-Agent)
 **As a** CFO Judge  
@@ -50,7 +50,7 @@
 - [ ] AC-F004-3: Escalate rejected transactions to HITL
 - [ ] AC-F004-4: Reset counter at UTC midnight
 
-*SRS Trace: §4.5 FR 5.2*
+*SRS Trace: §4 Functional Requirements | Updated: 2026-02-05
 
 ## F-005: Optimistic Concurrency Control (OCC)
 **As a** Judge  
@@ -63,4 +63,4 @@
 - [ ] AC-F005-3: Invalidate result on version mismatch (>1 delta)
 - [ ] AC-F005-4: Log full state diff on OCC failure
 
-*SRS Trace: §3.1.3, §4.6 FR 6.1*
+*SRS Trace: §4 Functional Requirements | Updated: 2026-02-05
