@@ -1,5 +1,5 @@
 # Project Chimera: Meta Specification
-*Version: 2026.02.05 | Status: RATIFIED | SRS Trace: §1.1–1.3*
+*Version: 2026-02-05 | Status: RATIFIED | SRS Trace: §1.1–1.3*
 
 ## Vision Statement
 Build a factory for Autonomous Influencer Agents—persistent digital entities capable of perception, reasoning, creative expression, and economic agency—operating under the **Single-Orchestrator Model** where one human manages thousands of agents via **Fractal Orchestration**.
