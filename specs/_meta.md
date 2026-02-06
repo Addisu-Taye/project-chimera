@@ -26,3 +26,12 @@ Build a factory for Autonomous Influencer Agents—persistent digital entities c
 - **Ethical**: All published content MUST include platform-native AI disclosure flags (§5.2 NFR 2.0)
 - **Financial**: Daily spend limits enforced at Redis layer BEFORE transaction execution (§4.5 FR 5.2)
 - **Security**: Wallet private keys NEVER in source code; injected via enterprise secrets manager at runtime
+
+## Migration Notes
+
+- **Pydantic v2 migration (2026-02-06)**: Skills in `skills/` were updated to use Pydantic v2 APIs (`Field`, `field_validator`, `model_fields`) and to remove temporary compatibility shims that exposed v1 `__fields__` structures. Tests in `tests/` were updated where necessary and all unit tests currently pass locally. Refer to the `CHANGELOG` entry and PR for details.
+
+- **Developer action items**:
+	- Ensure CI runs with Pydantic >=2.0 in `requirements.txt` / environment.
+	- Remove any remaining runtime compatibility hacks before production release.
+	- Update contributor guidelines to prefer `field_validator` and `model_fields` patterns.

@@ -26,6 +26,8 @@ except ImportError:
 
 def test_trend_query_validation():
     """Test TrendQuery input validation per specs/functional.md §F-002"""
+    # Story: An analyst prepares a query to find signals in noisy social data.
+    # They expect invalid inputs to be rejected so downstream planners don't act on bad data.
     # Should fail - empty topic
     with pytest.raises((ValidationError, ValueError)):
         TrendQuery("")
@@ -46,6 +48,8 @@ def test_trend_query_validation():
 
 def test_trend_result_validation():
     """Test TrendResult output validation per specs/functional.md §F-002"""
+    # Story: After fetching trends, a validator ensures results are sensible.
+    # This test asserts that out-of-bounds scores and empty results are rejected.
     # Should fail - relevance_score out of bounds
     with pytest.raises((ValidationError, ValueError)):
         TrendResult(["trend1"], 1.5)  # > 1.0
@@ -65,6 +69,8 @@ def test_trend_result_validation():
 @pytest.mark.asyncio
 async def test_trend_fetcher_execution_contract():
     """Test that execute function follows the required contract"""
+    # Story: The executor runs in an isolated environment and must return timing
+    # and confidence metadata so the Judge can decide on further actions.
     # This will fail until the skill is implemented
     query = TrendQuery("AI", "global", 24)
     
@@ -80,6 +86,8 @@ async def test_trend_fetcher_execution_contract():
 
 def test_spec_traceability():
     """Verify spec traceability requirements are met"""
+    # Story: Every artifact must point back to its specification for auditability.
+    # This test enforces that trace links are present on input models.
     # Every skill must reference specs and SRS
     query = TrendQuery("test", "global", 24)
     

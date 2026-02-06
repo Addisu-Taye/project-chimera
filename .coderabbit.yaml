@@ -1,0 +1,36 @@
+# CodeRabbit AI Review Configuration
+# Valid properties only - no "review" property
+
+language: en-US
+
+rules:
+  - name: spec-alignment
+    description: "Code must align with specifications in specs/ directory"
+    severity: high
+    checks:
+      - "All new functions reference specs/ files in docstrings"
+      - "No implementation without corresponding spec"
+      - "Traceability comments present: # SPEC: specs/file.md §SECTION"
+  
+  - name: security-vulnerabilities  
+    description: "Prevent common security issues"
+    severity: critical
+    checks:
+      - "No hardcoded secrets or API keys"
+      - "Input validation present for all external inputs"
+      - "SQL injection prevention (use parameterized queries)"
+      - "No direct API calls - must use MCP tools only"
+  
+  - name: architectural-compliance
+    description: "Enforce FastRender Swarm architecture"
+    severity: high
+    checks:
+      - "No monolithic agent logic - must decompose into Planner/Worker/Judge"
+      - "Skills never contain orchestration logic"
+      - "OCC state_version checks before state updates"
+
+ignore:
+  - "**/*.md"
+  - "**/docs/**"
+  - "Makefile"
+  - "Dockerfile"
